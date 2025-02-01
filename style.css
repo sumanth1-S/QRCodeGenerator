@@ -1,0 +1,300 @@
+Base styles
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+h2 {
+    color: #333;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#qrCodeContainer {
+    margin-top: 20px;
+}
+
+#countdown, #statusMessage {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+} 
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Buttons Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Status Message */
+#statusMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* QR Code Container */
+#qrCodeContainer {
+    margin-top: 20px;
+}
+
+/* Countdown */
+#countdown {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ff5722;
+}
+
+/* Message Form Styling */
+#messageForm {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: none;
+}
+
+#messageForm h3 {
+    color: #333;
+}
+
+#messageForm label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#messageForm input,
+#messageForm textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#messageForm textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Buttons inside the message form */
+#messageForm button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#messageForm #sendMessageButton {
+    background-color: #4CAF50;
+}
+
+#messageForm #closeFormButton {
+    background-color: #f44336;
+}
+
+#messageForm button:hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Buttons Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Status Message */
+#statusMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Send Image Form Styling */
+#sendImageForm {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: none;
+}
+
+#sendImageForm h3 {
+    color: #333;
+}
+
+#sendImageForm label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#sendImageForm input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons inside the image form */
+#sendImageForm button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#sendImageForm #sendImageApiButton {
+    background-color: #4CAF50;
+}
+
+#sendImageForm #closeImageFormButton {
+    background-color: #f44336;
+}
+
+#sendImageForm button:hover {
+    opacity: 0.9;
+}
+
+
+
+

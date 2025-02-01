@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h2>QR Code Generator</h2>
+        <div class="buttons">
+            <button id="generateButton">Generate QR Code</button>
+            <button id="closeSessionButton" style="display: none;">Logout Session</button>
+            <!--<button id="sendImageButton" style="display: none;">Send Image</button>-->
+            <!-- New button to open the phone/message form -->
+            <button id="openFormButton" style="display: none;">send message</button>
+            <button id="ImageFormButton" style="display: none;">send Image</button>
+            <!-- Status message display -->
+            <div id="statusMessage"></div>
+        </div>
+        <div id="qrCodeContainer"></div>
+        <div id="countdown"></div> <!-- Countdown will be shown here -->
+        <div id="statusMessage"></div> <!-- Status message will be shown here -->
+         <!-- Form to enter phone number and message -->
+         <div id="messageForm" style="display: none;">
+            <h3>Send a Message</h3>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Enter your message" required></textarea><br>
+
+            <button id="sendMessageButton" style="display: none;">Send Message</button>
+            <button id="closeFormButton">Close</button>
+        </div>
+
+
+         <!-- Send Image Form -->
+         <div id="sendImageForm" style="display: none;">
+            <h3>Send an Image</h3>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="imagePhone" placeholder="Enter phone number" required><br>
+
+            <label for="caption">Caption:</label>
+            <input type="text" id="caption" placeholder="Enter caption" required><br>
+
+            <label for="imageUrl">Image URL:</label>
+            <input type="url" id="imageUrl" placeholder="Enter image URL" required><br>
+
+            <button id="sendImageButton" style="display: none;">Send Image</button>
+            <button id="closeImageFormButton">Close</button>
+        </div>
+        
+    </div>
+                                                
+     <script src="send-image.js"></script><!-- Link the send-image js script -->
+    <script src="session.js"></script> <!-- Link to the session management JS file -->
+    <script src="message.js"></script> <!-- Link to the message sending JS file -->
+
+
+</body>
+</html>
